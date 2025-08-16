@@ -8,7 +8,6 @@
 /* Tablets y pantallas medianas (menos de 1024px de ancho) */
 @media (max-width: 1024px) {
     .container {
-        max-width: 95%; /* Reduce el ancho para no forzar scroll horizontal */
         padding: 1rem;  /* Espaciado interno */
         min-height: 100vh;   /* fallback para navegadores antiguos */
         min-height: 100dvh;  /* usa el alto real visible en móviles modernos */
@@ -60,3 +59,4 @@
         font-size: 0.8rem; /* Texto más pequeño para encajar mejor */
     }
 }
+
