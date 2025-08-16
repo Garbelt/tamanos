@@ -45,10 +45,11 @@ body {
     align-items: flex-end; /* lo apoya abajo */
   }
   .container {
-    transform: scale(0.8);        /* 🔹 ajusta el zoom */
+    transform: scale(0.5);        /* 🔹 ajusta el zoom */
     transform-origin: bottom center; /* ancla abajo */
   }
 }
+
 
 
 
