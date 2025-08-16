@@ -8,6 +8,11 @@ body {
     min-height: 100dvh;  /* alto real visible en móviles modernos */
 }
 
+.container {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
 /* Tablets y pantallas medianas (menos de 1024px de ancho) */
 @media (max-width: 1024px) {
     .container {
@@ -56,4 +61,5 @@ body {
         font-size: 0.8rem;
     }
 }
+
 
