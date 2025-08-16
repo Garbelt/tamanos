@@ -1,42 +1,4 @@
 /* ============================
-   Estilos de adaptación general
-   ============================ */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff; /* opcional, podés cambiar */
-}
-
-/* Contenedor principal de cada juego */
-.container {
-  max-width: 900px; /* ajustá según tu diseño */
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-/* ============================
-   Modo retrato (portrait)
-   ============================ */
-@media screen and (orientation: portrait) {
-  body {
-    justify-content: center;
-    align-items: center;
-  }
-  .container {
-    transform: scale(1);
-    transform-origin: center center;
-  }
-}
-
-/* ============================
    Modo paisaje (landscape)
    ============================ */
 @media screen and (orientation: landscape) {
@@ -49,6 +11,7 @@ body {
     transform-origin: bottom center; /* ancla abajo */
   }
 }
+
 
 
 
