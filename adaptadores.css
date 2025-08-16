@@ -1,10 +1,56 @@
-/* Escala automática para landscape */
-@media screen and (orientation: landscape) {
+/* ============================
+   Estilos de adaptación general
+   ============================ */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff; /* opcional, podés cambiar */
+}
+
+/* Contenedor principal de cada juego */
+.container {
+  max-width: 900px; /* ajustá según tu diseño */
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* ============================
+   Modo retrato (portrait)
+   ============================ */
+@media screen and (orientation: portrait) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
   .container {
-    transform: scale(0.3);  /* ajusta el porcentaje según lo que necesites */
-    transform-origin: top center;
+    transform: scale(1);
+    transform-origin: center center;
   }
 }
+
+/* ============================
+   Modo paisaje (landscape)
+   ============================ */
+@media screen and (orientation: landscape) {
+  body {
+    justify-content: center;
+    align-items: flex-end; /* lo apoya abajo */
+  }
+  .container {
+    transform: scale(0.8);        /* 🔹 ajusta el zoom */
+    transform-origin: bottom center; /* ancla abajo */
+  }
+}
+
+
 
 
 
