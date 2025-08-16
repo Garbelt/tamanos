@@ -1,65 +1,10 @@
-/* ============================================================
-   ADAPTADORES DE PANTALLA PARA JUEGOS DIDÁCTICOS
-   ============================================================ */
-
-/* Ajuste global de altura */
-body {
-    min-height: 100vh;   /* fallback para navegadores antiguos */
-    min-height: 100dvh;  /* alto real visible en móviles modernos */
+/* Escala automática para landscape */
+@media screen and (orientation: landscape) {
+  .container {
+    transform: scale(0.8);  /* ajusta el porcentaje según lo que necesites */
+    transform-origin: top center;
+  }
 }
 
-.container {
-    min-height: 100vh;
-    min-height: 100dvh;
-}
-
-/* Tablets y pantallas medianas (menos de 1024px de ancho) */
-@media (max-width: 1024px) {
-    .container {
-        padding: 1rem;
-    }
-}
-
-/* Pantallas pequeñas (celulares en vertical, menos de 768px) */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        padding: 0.5rem;
-    }
-
-    .container {
-        padding: 0.5rem;
-        border-width: 1px;
-    }
-
-    #start-button-container {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    table {
-        font-size: 0.9rem;
-    }
-}
-
-/* Móviles muy pequeños (menos de 480px de ancho) */
-@media (max-width: 480px) {
-    .titulo-principal {
-        font-size: clamp(14px, 6vw, 20px);
-    }
-
-    .titulo-secundario {
-        font-size: clamp(12px, 4.5vw, 18px);
-    }
-
-    .celda-panel {
-        padding: 4px;
-        font-size: clamp(12px, 3.5vw, 16px);
-    }
-
-    table {
-        font-size: 0.8rem;
-    }
-}
 
 
