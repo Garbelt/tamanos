@@ -1,49 +1,46 @@
-﻿/* ============================================================
+/* ============================================================
    ADAPTADORES DE PANTALLA PARA JUEGOS DIDÁCTICOS
-   Autor: G Belt + ChatGPT
-   Uso: Incluye este archivo DESPUÉS de tu CSS principal en el HTML
-   Objetivo: Ajustar el diseño automáticamente en pantallas pequeñas
    ============================================================ */
+
+/* Ajuste global de altura */
+body {
+    min-height: 100vh;   /* fallback para navegadores antiguos */
+    min-height: 100dvh;  /* alto real visible en móviles modernos */
+}
 
 /* Tablets y pantallas medianas (menos de 1024px de ancho) */
 @media (max-width: 1024px) {
     .container {
-        padding: 1rem;  /* Espaciado interno */
-        min-height: 100vh;   /* fallback para navegadores antiguos */
-        min-height: 100dvh;  /* usa el alto real visible en móviles modernos */
+        padding: 1rem;
     }
 }
 
 /* Pantallas pequeñas (celulares en vertical, menos de 768px) */
 @media (max-width: 768px) {
     body {
-        min-height: 100vh;
-        min-height: 100dvh;
-        flex-direction: column; /* Evita que el contenido se aplaste en horizontal */
+        flex-direction: column;
         padding: 0.5rem;
     }
 
     .container {
-        min-height: 100vh;
-        min-height: 100dvh;
         padding: 0.5rem;
-        border-width: 1px; /* Borde más delgado en móviles */
+        border-width: 1px;
     }
 
     #start-button-container {
         width: 90%;
-        max-width: 300px; /* Evita botones desbordados */
+        max-width: 300px;
     }
 
     table {
-        font-size: 0.9rem; /* Texto de tabla ligeramente más pequeño */
+        font-size: 0.9rem;
     }
 }
 
 /* Móviles muy pequeños (menos de 480px de ancho) */
 @media (max-width: 480px) {
     .titulo-principal {
-        font-size: clamp(14px, 6vw, 20px); /* Tamaño adaptado a pantallas chicas */
+        font-size: clamp(14px, 6vw, 20px);
     }
 
     .titulo-secundario {
@@ -56,7 +53,7 @@
     }
 
     table {
-        font-size: 0.8rem; /* Texto más pequeño para encajar mejor */
+        font-size: 0.8rem;
     }
 }
 
